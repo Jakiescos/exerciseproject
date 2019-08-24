@@ -11,4 +11,5 @@ public class DanePodmiotu {
     String nazwaUlicy;
     Integer nrDomu;
     Integer nrMieszkania;
+    
 }
