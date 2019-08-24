@@ -1,4 +1,4 @@
-package com.jakiescos.exercise;
+package com.jakiescos.exercise.dto;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.jakiescos.exercise;
+package com.jakiescos.exercise.entity;
 
 public class PodmiotEntity {
     Long id;

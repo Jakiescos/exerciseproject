@@ -1,4 +1,4 @@
-package com.jakiescos.exercise;
+package com.jakiescos.exercise.entity;
 
 import java.time.LocalDate;
 
