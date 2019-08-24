@@ -1,4 +1,4 @@
-package com.jakiescos.exercise;
+package com.jakiescos.exercise.dto;
 
 public class DokumentDto {
     Long dokumentId;

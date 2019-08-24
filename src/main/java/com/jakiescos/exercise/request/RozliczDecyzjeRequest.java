@@ -1,4 +1,6 @@
-package com.jakiescos.exercise;
+package com.jakiescos.exercise.request;
+
+import com.jakiescos.exercise.dto.DokumentOznaczenieDto;
 
 import java.util.List;
 

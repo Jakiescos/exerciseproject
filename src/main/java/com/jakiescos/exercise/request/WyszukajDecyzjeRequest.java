@@ -1,4 +1,4 @@
-package com.jakiescos.exercise;
+package com.jakiescos.exercise.request;
 
 public class WyszukajDecyzjeRequest {
     Long idDecyzji;
