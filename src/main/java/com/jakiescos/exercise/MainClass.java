@@ -1,6 +1,6 @@
 package com.jakiescos.exercise;
 
-public class Maincla {
+public class MainClass {
     public static void main(String[] args) {
 
     }
