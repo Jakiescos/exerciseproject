@@ -32,4 +32,12 @@ public class WydajDecyzjeRequest {
     public DanePodmiotuDto getDanePodmiotu() {
         return danePodmiotu;
     }
+
+    public WydajDecyzjeRequest(String numer, LocalDate dataWydania, LocalDate dataWaznosci, List<TablicaDto> tablice, DanePodmiotuDto danePodmiotu) {
+        this.numer = numer;
+        this.dataWydania = dataWydania;
+        this.dataWaznosci = dataWaznosci;
+        this.tablice = tablice;
+        this.danePodmiotu = danePodmiotu;
+    }
 }

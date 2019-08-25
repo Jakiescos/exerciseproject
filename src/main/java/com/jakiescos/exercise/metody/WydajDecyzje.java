@@ -1,7 +1,6 @@
-package com.jakiescos.exercise;
+package com.jakiescos.exercise.metody;
 
 import com.jakiescos.exercise.dto.BlankietDto;
-import com.jakiescos.exercise.dto.DanePodmiotuDto;
 import com.jakiescos.exercise.dto.TablicaDto;
 import com.jakiescos.exercise.entity.*;
 import com.jakiescos.exercise.enumy.RodzajOznaczenia;
@@ -9,12 +8,14 @@ import com.jakiescos.exercise.enumy.Stan;
 import com.jakiescos.exercise.enumy.TypDokumentu;
 import com.jakiescos.exercise.request.WydajDecyzjeRequest;
 
+import java.time.LocalDate;
 import java.util.List;
 
 
-public class Dtomethod {
+public class WydajDecyzje {
     Long wydajDecyzje(WydajDecyzjeRequest dto) {
         DecyzjaEntity decyzja = new DecyzjaEntity(dto.getNumer(), dto.getDataWaznosci(), dto.getDataWydania());
+
 
         List<TablicaDto> tablice = dto.getTablice();
         for (TablicaDto tablicaDto : tablice) {
@@ -29,9 +30,11 @@ public class Dtomethod {
             List<BlankietDto> blankietyDto = tablicaDto.getBlankiety();
             for (BlankietDto blankietDto : blankietyDto) {
                 BlankietEntity blankiet =
-                        new BlankietEntity(decyzja.getId(),blankietDto.getNumer(), getTyp(blankietDto.getTyp()));
+                        new BlankietEntity(decyzja.getId(), blankietDto.getNumer(), getTyp(blankietDto.getTyp()));
+
                 PodmiotEntity podmiot = new PodmiotEntity(decyzja.getId(), 1L);
-                DanePodmiotu danePodmiotu = new DanePodmiotu()
+                DanePodmiotu danePodmiotu = new DanePodmiotu();
+
             }
         }
 

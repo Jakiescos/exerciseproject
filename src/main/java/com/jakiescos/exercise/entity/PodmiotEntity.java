@@ -6,7 +6,6 @@ public class PodmiotEntity {
     Long nrWariantu;
 
     public PodmiotEntity(Long decyzjaId, Long nrWariantu) {
-        this.id = id;
         this.decyzjaId = decyzjaId;
         this.nrWariantu = nrWariantu;
     }

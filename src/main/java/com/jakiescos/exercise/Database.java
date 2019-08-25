@@ -1,11 +1,10 @@
 package com.jakiescos.exercise;
-@import entity.*;
+
 import com.jakiescos.exercise.entity.*;
 import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
-
 @Getter
 public class Database {
     private static Database database;
