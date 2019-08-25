@@ -16,5 +16,7 @@ public class MainClass {
         jsonConwerter.convertToWyszukajDecyzje("\"D:\\JAVA\\zjazdy\\sierpien\\24.08\\wyszukajDecById.json\"");
         jsonConwerter.convertToModyfikujDecyzje("\"D:\\JAVA\\zjazdy\\sierpien\\24.08\\wyszukajDecByNumerDecyzji.json\"");
 
+
+
     }
 }

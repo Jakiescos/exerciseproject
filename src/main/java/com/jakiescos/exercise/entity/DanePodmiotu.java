@@ -1,6 +1,9 @@
-package com.jakiescos.exercise.dto;
+package com.jakiescos.exercise.entity;
 
-public class DanePodmiotuDto {
+public class DanePodmiotu {
+    Long id;
+    Long podmiotId;
+    Long nrWariantu;
     String imie;
     String nazwisko;
     String pesel;
@@ -9,15 +12,10 @@ public class DanePodmiotuDto {
     Integer nrDomu;
     Integer nrMieszkania;
 
-    public String getImie() {
-        return imie;
-    }
-
-    public String getNazwisko() {
-        return nazwisko;
-    }
-
-    public DanePodmiotuDto(String imie, String nazwisko, String pesel, String miasto, String nazwaUlicy, Integer nrDomu, Integer nrMieszkania) {
+    public DanePodmiotu(Long id, Long podmiotId, Long nrWariantu, String imie, String nazwisko, String pesel, String miasto, String nazwaUlicy, Integer nrDomu, Integer nrMieszkania) {
+        this.id = id;
+        this.podmiotId = podmiotId;
+        this.nrWariantu = nrWariantu;
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.pesel = pesel;
@@ -25,6 +23,26 @@ public class DanePodmiotuDto {
         this.nazwaUlicy = nazwaUlicy;
         this.nrDomu = nrDomu;
         this.nrMieszkania = nrMieszkania;
+    }
+
+    public DanePodmiotu() {
+
+    }
+
+    public Long getPodmiotId() {
+        return podmiotId;
+    }
+
+    public Long getNrWariantu() {
+        return nrWariantu;
+    }
+
+    public String getImie() {
+        return imie;
+    }
+
+    public String getNazwisko() {
+        return nazwisko;
     }
 
     public String getPesel() {

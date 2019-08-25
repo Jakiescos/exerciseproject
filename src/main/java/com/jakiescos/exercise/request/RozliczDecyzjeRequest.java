@@ -6,4 +6,8 @@ import java.util.List;
 
 public class RozliczDecyzjeRequest {
     List<DokumentOznaczenieDto> dokumentOznaczenie;
+
+    public List<DokumentOznaczenieDto> getDokumentOznaczenie() {
+        return dokumentOznaczenie;
+    }
 }
