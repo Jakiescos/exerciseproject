@@ -12,4 +12,24 @@ public class WydajDecyzjeRequest {
     LocalDate dataWaznosci;
     List<TablicaDto> tablice;
     DanePodmiotuDto danePodmiotu;
+
+    public String getNumer() {
+        return numer;
+    }
+
+    public LocalDate getDataWydania() {
+        return dataWydania;
+    }
+
+    public LocalDate getDataWaznosci() {
+        return dataWaznosci;
+    }
+
+    public List<TablicaDto> getTablice() {
+        return tablice;
+    }
+
+    public DanePodmiotuDto getDanePodmiotu() {
+        return danePodmiotu;
+    }
 }
