@@ -1,5 +1,5 @@
 package com.jakiescos.exercise;
-@import entity.*;
+
 import com.jakiescos.exercise.entity.*;
 import lombok.Getter;
 

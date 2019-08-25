@@ -5,7 +5,7 @@ import com.jakiescos.exercise.dto.TablicaDto;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.function.Predicate;
+
 
 public class WydajDecyzjeRequest {
     String numer;
@@ -14,11 +14,23 @@ public class WydajDecyzjeRequest {
     List<TablicaDto> tablice;
     DanePodmiotuDto danePodmiotu;
 
-    public <T> Predicate getDataWaznosci() {
-        return null;
+    public String getNumer() {
+        return numer;
     }
 
     public LocalDate getDataWydania() {
-        return null;
+        return dataWydania;
+    }
+
+    public LocalDate getDataWaznosci() {
+        return dataWaznosci;
+    }
+
+    public List<TablicaDto> getTablice() {
+        return tablice;
+    }
+
+    public DanePodmiotuDto getDanePodmiotu() {
+        return danePodmiotu;
     }
 }
