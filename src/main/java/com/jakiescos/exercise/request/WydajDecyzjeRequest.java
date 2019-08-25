@@ -6,6 +6,7 @@ import com.jakiescos.exercise.dto.TablicaDto;
 import java.time.LocalDate;
 import java.util.List;
 
+
 public class WydajDecyzjeRequest {
     String numer;
     LocalDate dataWydania;
