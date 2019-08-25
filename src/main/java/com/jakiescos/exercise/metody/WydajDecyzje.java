@@ -16,7 +16,6 @@ public class WydajDecyzje {
     Long wydajDecyzje(WydajDecyzjeRequest dto) {
         DecyzjaEntity decyzja = new DecyzjaEntity(dto.getNumer(), dto.getDataWaznosci(), dto.getDataWydania());
 
-
         List<TablicaDto> tablice = dto.getTablice();
         for (TablicaDto tablicaDto : tablice) {
             OznaczenieEntity tablica =

@@ -1,4 +1,4 @@
-package com.jakiescos.exercise;
+package com.jakiescos.exercise.service;
 
 import com.jakiescos.exercise.entity.*;
 import lombok.Getter;

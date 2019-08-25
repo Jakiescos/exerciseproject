@@ -1,15 +1,13 @@
 package com.jakiescos.exercise;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.jakiescos.exercise.dto.StringiDto;
-import com.jakiescos.exercise.request.*;
+import com.jakiescos.exercise.service.JsonConwerter;
 
 import java.io.IOException;
 
 public class MainClass {
     public static void main(String[] args) throws IOException {
 
-        com.jakiescos.exercise.JsonConwerter jsonConwerter = new com.jakiescos.exercise.JsonConwerter();
+        JsonConwerter jsonConwerter = new JsonConwerter();
         jsonConwerter.convertToRozliczdecyzje("\"D:\\JAVA\\zjazdy\\sierpien\\24.08\\RozliczDecyzje.json\"");
         jsonConwerter.convertToUchylDecyzje("\"D:\\JAVA\\zjazdy\\sierpien\\24.08\\UchylDecyzje.json\"");
         jsonConwerter.convertToWydajDecyzje("\"D:\\JAVA\\zjazdy\\sierpien\\24.08\\wydajDec.json\"");

@@ -1,4 +1,4 @@
-package com.jakiescos.exercise;
+package com.jakiescos.exercise.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jakiescos.exercise.dto.StringiDto;
