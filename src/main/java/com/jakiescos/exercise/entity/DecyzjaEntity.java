@@ -1,11 +1,19 @@
 package com.jakiescos.exercise.entity;
 
-import java.time.LocalDateTime;
-
+import lombok.Getter;
+import java.time.LocalDate;
+@Getter
 public class DecyzjaEntity {
-    Long id;
-    String numer;
-    LocalDateTime dataWaznosci;
-    LocalDateTime dataWydania;
-
+    private static Long nextId = 1L;
+    private Long id;
+    private String numer;
+    private LocalDate dataWaznosci;
+    private LocalDate dataWydania;
+    public DecyzjaEntity(String numer, LocalDate dataWaznosci, LocalDate dataWydania) {
+        this.numer = numer;
+        this.dataWaznosci = dataWaznosci;
+        this.dataWydania = dataWydania;
+        id = nextId;
+        nextId++;
+    }
 }
