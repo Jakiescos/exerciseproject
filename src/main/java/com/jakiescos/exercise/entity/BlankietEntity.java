@@ -7,4 +7,10 @@ public class BlankietEntity {
     Long decyzjaId;
     String numer;
     TypDokumentu typ;
+
+    public BlankietEntity(Long decyzjaId, String numer, TypDokumentu typ) {
+        this.decyzjaId = decyzjaId;
+        this.numer = numer;
+        this.typ = typ;
+    }
 }
